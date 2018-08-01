@@ -12,6 +12,7 @@ module.exports = {
     exactLength: 'Le champ {{label}} doit avoir une longueur exacte de {{var_1}} caractères',
     exists: 'Le champ {{label}} doit être défini',
     required: 'Le champ {{label}} est requis',
+    requiredOptional: 'Le champ {{label}} est requis',
     minLength: 'Le champ {{label}} doit avoir une longueur minimum de {{var_1}} caractères',
     maxLength: 'Le champ {{label}} ne doit pas dépasser {{var_1}} caractères',
     lessThan: 'Le champ {{label}} doit être un nombre inférieur à {{var_1}}',

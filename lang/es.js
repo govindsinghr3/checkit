@@ -9,6 +9,7 @@ module.exports = {
     exactLength: '{{label}} debe de ser de exactamente {{var_1}} caracteres',
     exists: '{{label}} debe de existir',
     required: '{{label}} es obligatorio',
+    requiredOptional: '{{label}} es obligatorio',
     minLength: '{{label}} debe de ser de al menos {{var_1}} caracteres',
     maxLength: '{{label}} no debe de ser de más de {{var_1}} caracteres',
     lessThan: '{{label}} debe de ser un número menor que {{var_1}}',

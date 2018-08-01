@@ -12,6 +12,7 @@ module.exports = {
     exactLength: 'Het veld {{label}} moet een exacte lengte hebben van {{var_1}} tekens',
     exists: 'Het veld {{label}} moet worden gedefinieerd',
     required: 'Het veld {{label}} is verplicht',
+    requiredOptional: 'Het veld {{label}} is verplicht',
     minLength: 'Het veld {{label}} moet een minimumlengte hebben van {{var_1}} tekens',
     maxLength: 'Het veld {{label}} moet niet meer zijn dan {{var_1}} tekens',
     lessThan: 'Het veld {{label}} moet een getal zijn kleiner dan {{var_1}}',

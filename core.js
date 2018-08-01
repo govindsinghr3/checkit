@@ -347,14 +347,28 @@ module.exports = function (_, Promise) {
     },
 
     // Field is required if dependent field value matches and not empty (zero does not count as empty).
-    requiredOptional: function (val, field, onValue) {
+    requiredOptional: function(val, field, expectedValue) {
       const fieldValue = this._target[field];
-      if (onValue) {
-        return (fieldValue != null && fieldValue !== '' && fieldValue == onValue && val ? true : false);
+      const isFieldValue = fieldValue != null && fieldValue !== "";
+      if (isFieldValue) {
+        // If field dependency is there
+        // Field value and current value should not be null
+        if (!expectedValue) {
+          return isFieldValue && val ? true : false;
+        } else {
+          const isFieldValueMatchesCurrentValue =
+            isFieldValue && expectedValue === fieldValue;
+          // If expectedValue passed, fieldValue should match that
+          if (isFieldValueMatchesCurrentValue) {
+            return isFieldValueMatchesCurrentValue && val ? true : false;
+          } else {
+            return true;
+          }
+        }
       } else {
-        return (fieldValue != null && fieldValue !== '' && val ? true : false);
+        return true;
       }
-    };
+    },
 
     // Matches another named field in the current validation object.
     matchesField: function (val, field) {

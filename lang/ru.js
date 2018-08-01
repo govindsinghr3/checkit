@@ -12,6 +12,7 @@ module.exports = {
     exactLength: 'Длина {{label}} должна быть {{var_1}} символов',
     exists: '{{label}} должно быть определено',
     required: '{{label}} обязательно',
+    requiredOptional: '{{label}} обязательно',
     minLength: '{{label}} должно быть не короче {{var_1}} символов',
     maxLength: '{{label}} не должно быть длинее {{var_1}} символов',
     lessThan: '{{label}} должно быть числом меньше чем {{var_1}}',

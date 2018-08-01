@@ -12,6 +12,7 @@ module.exports = {
     exactLength: 'The {{label}} must be exactly {{var_1}} characters long',
     exists: 'The {{label}} must be defined',
     required: 'The {{label}} is required',
+    requiredOptional: 'The {{label}} is required',
     minLength: 'The {{label}} must be at least {{var_1}} characters long',
     maxLength: 'The {{label}} must not exceed {{var_1}} characters long',
     lessThan: 'The {{label}} must be a number less than {{var_1}}',
